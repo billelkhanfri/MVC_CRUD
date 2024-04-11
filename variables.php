@@ -2,11 +2,11 @@
 
 <?php
 
-$employeeStatement = $mysqlClient->prepare('SELECT * FROM film_list');
+$employeeStatement = $mysqlClient->prepare('SELECT * FROM employee');
 
 $employeeStatement->execute();
 
-$films = $employeeStatement->fetchAll();
+$employee = $employeeStatement->fetchAll();
 
 
 
